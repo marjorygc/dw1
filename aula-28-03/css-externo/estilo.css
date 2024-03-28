@@ -1,0 +1,26 @@
+h1 {
+    color: rgb(0, 8, 116);
+    background-color: rgb(6, 127, 175);
+    text-align: center;
+    font-size: 3rem;
+}
+p{
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+}
+span{
+    color: rgb(9, 92, 1);
+    font-weight: bold;
+}
+strong{
+    color: #115300;
+}
+
+h2{
+    color: aqua;
+}
+
+h2{
+    color: blueviolet;
+}
