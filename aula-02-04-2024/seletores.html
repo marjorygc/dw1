@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS</title>
+
+    <style>
+
+        *{
+             
+        }
+
+        html{
+            background-color: cadetblue;
+        }
+
+        body{
+
+        }
+        
+        /* Selecione todas as tags h1*/
+        h1 {
+            color: green;
+        }
+
+        /*Selecione o elemento com o id título_principal*/
+        #titulo_principal {
+            color: red;
+            font-style: normal;
+        }
+        
+        p {
+            color: gray;
+            
+        }
+
+        /* Seleciona o elemento com o conteudo_principal */
+        #conteudo_principal{
+            color: red;
+            text-decoration: underline;
+        }
+
+        /* Selecione todos os elementos com a classe destaque */
+        .destaque {
+            background-color: yellow;
+            color: blueviolet;
+        }
+
+        /* Selecione todos os elementos com a classe cor_primaria */
+        .cor_primaria {
+            color: green;
+        }
+
+        .container{
+            background-color: aquamarine;
+            border: 1px solid black;
+            font-style: italic;
+        }
+
+        /* Selecione todas as tags p que tenham a classe destaque */
+        p.destaque {
+            font-size: 20px;
+        }
+
+        p.destaque.cor_primaria{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="titulo_principal">Primeiro título</h1>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta veritatis, libero esse blanditiis pariatur non rem possimus eum aperiam perferendis dignissimos qui debitis error magni deleniti ad culpa amet laborum.</p>
+
+    </div>
+    
+
+<h1 class="destaque">Segundo título</h1>
+
+<p class="destaque">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima excepturi in ullam mollitia iste, est quasi ab similique hic rem tempore exercitationem aut saepe quis delectus veritatis non voluptates doloribus.</p>
+
+<p id="conteudo_principal"
+class="cor_primaria">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ullam. Quos eos illo laborum cumque expedita, quibusdam, sapiente odio necessitatibus fuga provident nam nisi, magnam officia commodi consectetur doloremque deserunt?</p>
+
+<p class="destaque cor_primaria"> parágrafo</p>
+
+</body>
+
+
+</html>
