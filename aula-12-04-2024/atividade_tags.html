@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        p{
+             text-align: justify;
+        }
+
+        .cor_codigos{
+            font-size: 14px;
+            color:darkgreen;
+        }
+        h1{
+            text-align: center;
+        }
+
+        kbd {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            background-color: rgb(179, 178, 178);
+            border: 1px solid gray;
+            padding: 3px;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tags de código</h1>
+    <p>Apresentar blocos de código em documentos HTML tornou-se uma atividade bastante comum, visto que existem inúmeros sites que precisam exigir trechos de código. E não apenas código, também precisamos mostrar a saída do código ao tentar replicar janelas de terminais. A seguir vamos apresentar 3 elementos HTML utilizados para representar trechos de código e a saída do código com exemplos de cada uma dessas tags sendo utilizadas.</p>
+
+    <h2>Code</h2>
+    <p>O elemento HTML <code class="cor_codigos">code</code> apresenta seu conteúdo estilizado de maneira a indicar que o texto é um pequeno fragmento de código. Por padrão, o conteúdo é exibido utilizando a fonte monoespaçada padrão do user agent's (en-US).</p>
+    <p>Para representar múltiplas linha de código, envolva a tag <code class=" cor_codigos">code</code> dentro da tag <code class="cor_codigos">pre</code>. O elemento code por si só serve apenas para marcar uma única senteça ou linha como código.Uma regra CSS pode ser definida para o seletor <code class="cor_codigos">code</code> para sobrescrever a fonte padrão do navegador. Preferências definidas pelo usuário podem ter precedência sore o CSS especifciado.</p>
+
+
+    <h2>Samp</h2>
+    <p>A palavra "samp" pode ser traduzida como "amostra", uma parte de algo, nesse caso uma parte do código. O elemento HTML samp é utilizado pra englobar textos que representam partes de um código. Seu conteúdo é normalmente renderizado usando a fonte monoespaçada padrão do navegador (como o Courier ou o Lucida Console).</p>
+
+    <h2>Pre</h2>
+    <p> O elemento "Preformatted Text Element" ou texto pré-formatado é utilizado para inserir um conteúdo que se deseja seja visualizado do modo como foi editado. Para destacar o conteúdo a fonte visualizada é "monospace". Um texto dentro da tag <code class="cor_codigos">pre</code> é tipicamente exibido em uma fonte não proporcional da mesma maneira em que o texto original foi disposto no arquivo. Espaços em branco são mantidos no texto da mesma forma em que este foi digitado.</p>
+
+    <h2>Kdb</h2>
+    <p>O elemento HTML kdb representa um período de texto em linha que devolveu a entrada do usuário textual de um teclado, entrada de voz ou qualquer outro dispositivo de entrada de texto, ou seja uma tecla. Por convenção, o agente do usuário não faz o padrão para renderizar o conteúdo de um kbd element usando sua fonte padrão monospace, embora isso não seja exigido pelo padrão HTML.</p>
+
+    <h3>Exemplo</h3>
+    <p>No exemplo abaixo foram utilizadas as tags code, samp, pre e kdb para exemplificar um código python.</p>
+
+    <p>
+        <pre>
+            <code>
+                x = 10
+                if x % 2 == 0:
+                    print("PAR")
+                else:
+                    print("ÍMPAR")
+            </code>
+        </pre>
+    </p>
+    <p>A saída desse código será <samp>PAR</samp></p>
+
+    <p>
+        O atalho <kbd>Shift</kbd> + <kbd>Alt</kbd> Insere no cursor linhas acima ou abaixo no vscode, dependendo da seta que for clicada, se for a seta pra cima as linhas vão ser selecionadas acima da linha iicial e se for a seta para baixo as linhas abaixo.
+    </p>
+
+</body>
+</html>
