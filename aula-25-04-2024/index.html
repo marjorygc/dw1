@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* span{
+            background-color: green;
+        }
+
+        span{
+            background-color: blue;
+        } */
+
+        /*#s1{
+            background-color: red;
+        }
+
+        .destaque{
+            background-color: yellow;
+        }*/
+
+        /*span, div, section, .destaque, #s1{
+            background-color: yellow;
+        }*/
+
+        /*section span{
+            background-color: green;
+        }*/
+
+        /* section > span{
+            background-color: yellow;
+        } */
+
+        div + span{
+            background-color: blueviolet;
+        }
+        span{
+            background-color: blue;
+        }
+
+        body > section + span {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+
+    <span id="s1" class="destaque">Span 0</span>
+
+    <section>
+    
+        <span>Span 1</span>
+    
+        <div>
+            <span>Span 2</span>
+            <span>Span 3</span>
+        </div>
+    
+        <span>Span 4</span>
+        <span>span 5</span>
+        <span>span 6</span>
+
+    </section>
+    <span>10</span>
+    
+</body>
+</html>
+
+
