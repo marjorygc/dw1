@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+
+        html body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        ul.disciplinas{
+            list-style-type:circle;
+        }
+
+        .menu{
+            list-style-type: none;
+            margin-left: 5px;
+        }
+
+        .menu li{
+            background-color: rgb(214, 214, 226);
+            border: 2px solid black;
+            /*border-width: 1px;
+            border-style: solid;
+            border-color: black; 
+            */padding-bottom: 5px;/*
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-left: 10px;*/
+            box-sizing: border-box;
+            padding: 10px;
+            width: 150px;
+            transition: 0.5s;
+            margin: 10px 0 ;
+            border-radius: 8px;
+        }
+
+        .menu li:hover{
+            background-color: cadetblue;
+            color: white;
+            cursor: pointer;
+        }
+
+        a.link {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            background-color: orange;
+            border: 1px solid black;
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Listas ordenadas</h1>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <h1>Listas Não Ordenadas</h1>
+
+    <ul class="disciplinas">
+        <li>
+            <div>Desenvolvimento Web 1</div>
+            <ul class="disciplinas">
+                <li>Desenvolvimento Web 1</li>
+                <li>Instalação e Manutenção de computadores/li>
+                <li>Desenvolvimento WEb 2</li>
+        
+            </ul>
+        </li>
+        
+    </ul>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript básico</li>
+    </ul>
+
+    <h1>Listas personalizadas</h1>
+    <ul class="menu">
+        <li><i class="material-icons">favorite</i>
+            Item 1</li>
+        <li> <i class="material-icons">search</i>
+            Item 2</li>
+        <li> <i class="material-icons">check</i>
+            Item 3</li> 
+    </ul>
+
+    <h1>Links</h1>
+    <p>Clique <a class="link" href="https://www.w3schools.com/css/css_icons.asp">aqui</a>
+         para acessar alguns ícones.</p>
+
+    <h1><a href="./gradiente.html"></a>Exemplo Gradiente</h1>
+    
+    
+</body>
+</html>
