@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .conteiner{
+            width: 100vw;
+            height: 100vh;
+            background-color: gray;
+
+            display: flex;
+            /*Esse flex direction é pra ver se o eixo vai começar da direita pra esquerda ou o contrário e tbm a direção do eixo, o x pode ser x e vice versa*/
+            flex-direction: column;
+
+            justify-content: space-around;
+            align-items: flex-start;
+            
+            flex-wrap: wrap;
+            align-content: space-around;*/
+        }
+
+        .box{
+            /* a div com classe box é filha da div conteiner, a diferença de usar as unidades rem e em, é q uma é relativa ao padrão da fonte do navegador enquanto a outra é relativa a fonte do pai */
+            width: 6.25rem;
+            height: 100px;
+            border: 2px solid black;
+            color: white;
+            /*Uso do flex box, mas como isso está sendo aplicado pra todas as box, então é melho criar uma classe separada, e ir reu tilizando as classes em vários elementos.
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /*display: inline-block;*/
+        }
+
+        .bg-azul{
+            background-color: blue;
+        }
+
+        .bg-vermelho{
+            background-color: red;
+        }
+        .bg-verde{
+            background-color: green;
+        }
+
+        .flexCenter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .posicaoFixa {
+            /* Não está sendo aplicado a nada, mas se você quiser manter uma das caixas fixas é só aplicar*/
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="conteiner">
+
+        <div class="box bg-vermelho">1</div>
+        <div class="box bg-azul">2</div>
+        <div class="box bg-verde flexCenter">3</div>
+        <div class="box bg-vermelho">1</div>
+        <div class="box bg-azul">2</div>
+        <div class="box bg-verde flexCenter">3</div>
+        <div class="box bg-vermelho">1</div>
+        <div class="box bg-azul">2</div>
+        <div class="box bg-verde flexCenter">3</div>
+
+    </div>
+
+</body>
+</html>
