@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Patrick Hand"; 
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        .disp{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #h{
+            background-color: rgb(235, 235, 122);
+            width: 100vw;
+            height: 10vh;
+            align-self: flex-start;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        #lado{
+            background-color: aquamarine;
+            display: flex;
+            width: 80%;
+            height: 100vh;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        #conteudo{
+            background-color: lightgreen;
+            width: 100%;
+            height: 80vh;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        #rodape{
+            background-color: lightpink;
+            align-items: flex-end;
+            width: 100vw;
+            height: 10vh;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="disp">
+        <aside id="lado">
+            <h2>Sidebar</h2>
+        </aside>
+        <div class="container">
+            <header id="h">
+                <h1>Topo</h1>
+            </header>
+            
+            <main id="conteudo">
+                <h2>Conteúdo</h2>
+            </main>
+            <footer id="rodape">
+                <h2>Rodapé</h2>
+            </footer>
+        </div>
+    </div>
+   
+</body>
+</html>
