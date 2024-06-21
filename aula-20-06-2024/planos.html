@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br   ">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+
+    <style>
+
+        :root{
+            --azul:rgb(80, 80, 255);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }   
+
+        body{
+            background-color: var(--azul);
+        }
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .container h1{
+            width: 100vw;
+            text-align: center;
+            color: white;
+            font-size: 45px;
+        }
+
+        .cardcontainer{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 18rem;
+            height: 400px;
+            border: 2px solid white;
+            border-radius: 8px;
+        }
+
+        .plano-nome{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-size: 25px;
+            font-weight: bolder;
+            
+        }
+
+        .plano-valor{
+            color: var(--azul);
+            font-weight: bolder;
+            font-size: 28px;
+        }
+
+        .plano-descricao li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+            font-size: smaller;
+            font-weight: lighter;
+            color: lightslategray;
+        }
+
+        .plano-comprar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 8rem;
+            height: 40px;
+            background-color: var(--azul);
+            border: 2px solid var(--azul);
+            border-radius: 5px;
+            color: white;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Planos</h1>
+
+        <div class="cardcontainer">
+            <div class="card">            
+                <div class="plano-nome">Starter</div>
+                <div class="plano-valor">R$ 50,00</div>
+                <div class="plano-descricao">
+                    <ul>
+                        <li>1 usuário</li>
+                        <li>100 GB de armazenamento</li>
+                        <li>Suporte por email</li>
+                    </ul>
+                </div>
+                <div class="plano-comprar">
+                    <span>Comprar</span>
+                </div>
+            </div>
+            <div class="card">
+                
+                <div class="plano-nome">Personal</div>
+                <div class="plano-valor">R$ 100,00</div>
+                <div class="plano-descricao">
+                    <ul>
+                        <li>10 usuários</li>
+                        <li>1 TB de armazenamento</li>
+                        <li>Suporte por email</li>
+                    </ul>
+                </div>
+                <div class="plano-comprar">
+                    <span>Comprar</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="plano-nome">Team</div>
+                <div class="plano-valor">R$ 300,00</div>
+                <div class="plano-descricao">
+                    <ul>
+                        <li>50 usuários</li>
+                        <li>5 TB de armazenamento</li>
+                        <li>Suporte por email</li>
+                    </ul>
+                </div>
+                <div class="plano-comprar">
+                    <span>Comprar</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
