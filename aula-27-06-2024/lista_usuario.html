@@ -26,34 +26,27 @@
 
         .list{
             display: flex;
-            background-color: white;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
+            background-color: white;
             width: 20rem;
             height: 400px;
             border: 2px solid white;
-            border-radius: 8px;
-            bor
+            border-radius: 10px;
+            border-bottom: 10px;
             list-style-type: none;
         }
 
         .list_item{
-            display: flex; 
-
-        }
-
-        .list_item_image{
             display: flex;
-            flex-shrink: 0;
-            justify-content: flex-start;
-            align-items: center;
-            height: 5px; 
         }
 
-        .list_item_image img{
+        .list_item img{
             border-radius: 50%;
-
+            height: 90px;
+            flex-shrink: 0;
+            justify-content: space-around;
         }
 
         .grown{
@@ -63,7 +56,6 @@
         }
 
         .list_item_content{
-            display: flex;
             justify-content: flex-start;
             align-items: center ;
             font-size: small;
@@ -84,7 +76,17 @@
     <div class="container">
         <ul class="list">
             <li class="list_item">
-                <div class="list_item_image">
+                <div>
+                    <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="">
+                </div>
+                
+                <div class="grown">
+                    <p class="list_item_content" >Hi, My name is</p>
+                    <p class=" list_item_name">Joan Butler</p>
+                </div>
+            </li>
+            <li class="list_item">
+                <div>
                     <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="">
                 </div>
                 <div class="grown">
@@ -93,7 +95,7 @@
                 </div>
             </li>
             <li class="list_item">
-                <div class="list_item_image">
+                <div>
                     <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="">
                 </div>
                 <div class="grown">
@@ -102,16 +104,7 @@
                 </div>
             </li>
             <li class="list_item">
-                <div class="list_item_image">
-                    <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="">
-                </div>
-                <div class="grown">
-                    <p class="list_item_content" >Hi, My name is</p>
-                    <p class=" list_item_name">Joan Butler</p>
-                </div>
-            </li>
-            <li class="list_item">
-                <div class="list_item_image">
+                <div>
                     <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="">
                 </div>
                 <div class="grown">
