@@ -1,0 +1,60 @@
+:root{
+    --altura-: ;
+    --altura-imagem: 300px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.secao_imagem{
+    background-image: url("https://file.notion.so/f/f/48a2f079-68a5-4bb5-99eb-51881ae2de09/f0a165ff-3bc0-444f-8084-6b0e76a31f64/imagem-fundo.avif?id=a8a7aeee-541e-4797-9ddf-1a03f6346383&table=block&spaceId=48a2f079-68a5-4bb5-99eb-51881ae2de09&expirationTimestamp=1720188000000&signature=fG6PWxchDnIVHlryl682VxTIrhdaNuHVS17Ty0z2gFc");
+    background-position: center;
+    height: var(--altura-imagem);
+
+}
+
+.secao_projetos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.projeto_item{
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.projeto_item h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
