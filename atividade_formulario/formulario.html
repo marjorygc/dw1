@@ -16,46 +16,60 @@
 
         #left{
             justify-content: flex-start;
-            align-items: center;
-            margin: 50px;
-            width: 50%;
+            padding: 30px;
+            width: 45%;
+        }
 
+        #right{
+            justify-content: flex-end;
+            width: 55%;
+            border: 1px solid white;
+            border-radius: 15px;
+            background-image: url("https://i.pinimg.com/736x/f0/1f/0c/f01f0c20cdd203bc2454d1ff2b7ec171.jpg");
         }
 
         input{
-            color: lightgrey;
+            display: flex;
+            flex-direction: column;
             border: 1px solid gray;
             border-radius: 2px;
             outline: none;
             padding: 0.5rem;
         }
 
-        #right{
-            justify-content: flex-end;
-            width: 50%;
-            border: 1px solid white;
-            border-radius: 15px;
-            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg5BjX_Vsp2uSJ5NBCOiwels8vMcwUDJgqfKY5J4HnJ84-Ws41rB6_skxGbpexudud6_s&usqp=CAU");
-        }
-
         .clear{
             font-weight: lighter;
+           
         }
 
         #box1{
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-left: 60px;
+        }
 
+        .or{
+            justify-content: center;
+            padding-left: 60px;
         }
 
         #box2{
-
+            justify-content: center;
+            padding-left: 60px;
         }
 
-        .continue{
+        .continue1{
+            color: white;
+            background-color: black;
 
         }
 
         .continue_text{
 
+        }
+
+        img{
+            width: 1.5rem;
         }
 
         input[type=button]{
@@ -76,32 +90,31 @@
     <div id="left">
         <div id="box1">
             <h1>Sign in or creat an account</h1>
-        <p class="clear">Welcome back Please enter your details</p>
-        <form action="#" method="get">
-            <input type="text" id="nomeUsuario" placeholder="Name">
-            <input type="text" id="emailUsuario" placeholder="Email addres">
-            <input type="submit" id="continue" placeholder="continue">
+            <p class="clear">Welcome back Please enter your details</p>
+            <form action="#" method="get">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email addres">
+                <input type="submit" id="continue" placeholder="continue">
+            </form>
         </div>
-        <div class="clear">
-            <hr>or</hr>
+        <div class="or">
+            <hr>
+            <p>or</p>
+            </hr>
         </div>
         <div id="box2">
             <div class="continue">
-                <div>
-                    <div></div>
-                    <div class="continue_text"><input type="button" value="Coninue with Google"></div>                   
-                </div>
+                <div><img src="https://img.icons8.com/?size=512&id=17949&format=png" alt=""></div>
+                <div class="continue_text"><input type="button" value="Coninue with Google"></div>                   
             </div>
             <div class="continue">
-                <div>
-                    <div></div>
+                    <div> <img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.jpg" alt=""></div>
                     <div class="continue_text"><input type="button" value="Coninue with Apple"></div>                   
-                </div>
+               
             </div>
             <div class="continue">
-                <div>
-                    <div><img src="" alt=""></div>
-                    <div class="continue_text"> <input type="button" value="Coninue with Facebook"></div>                   
+                    <div><img src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202107facebookfblogosocialsocialmedia-115710_115591.png" alt=""></div>
+                    <div class="continue_text"> <input type="button" value="Coninue with Facebook">              
                 </div>
             </div>
         </div>
