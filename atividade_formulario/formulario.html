@@ -5,46 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        body{
+            display: flex;
+            font-family:"Open Sans", sans-serif;
+        }
+
+        #left{
+            justify-content: flex-start;
+            align-items: center;
+            margin: 50px;
+            width: 50%;
+
+        }
+
+        input{
+            color: lightgrey;
+            border: 1px solid gray;
+            border-radius: 2px;
+            outline: none;
+            padding: 0.5rem;
+        }
+
+        #right{
+            justify-content: flex-end;
+            width: 50%;
+            border: 1px solid white;
+            border-radius: 15px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg5BjX_Vsp2uSJ5NBCOiwels8vMcwUDJgqfKY5J4HnJ84-Ws41rB6_skxGbpexudud6_s&usqp=CAU");
+        }
+
+        .clear{
+            font-weight: lighter;
+        }
+
+        #box1{
+
+        }
+
+        #box2{
+
+        }
+
+        .continue{
+
+        }
+
+        .continue_text{
+
+        }
+
+        input[type=button]{
+            background-color: white;
+            color: black;
+            border: 1px solid gray;
+            border-radius: 2px;
+            outline: none;
+            padding: 0.7rem;
+        }
+
+
+    </style>
+
 </head>
 <body>
 
-    <div>
-        <div>
+    <div id="left">
+        <div id="box1">
             <h1>Sign in or creat an account</h1>
-        <p>Welcome back Please enter your details</p>
+        <p class="clear">Welcome back Please enter your details</p>
         <form action="#" method="get">
             <input type="text" id="nomeUsuario" placeholder="Name">
             <input type="text" id="emailUsuario" placeholder="Email addres">
             <input type="submit" id="continue" placeholder="continue">
         </div>
-        <div>
-            <p>or</p>
+        <div class="clear">
+            <hr>or</hr>
         </div>
-        <div>
-            <div>
+        <div id="box2">
+            <div class="continue">
                 <div>
                     <div></div>
-                    <div><input type="button" value="Coninue with Google"></div>                   
+                    <div class="continue_text"><input type="button" value="Coninue with Google"></div>                   
                 </div>
             </div>
-            <div>
+            <div class="continue">
                 <div>
                     <div></div>
-                    <div><input type="button" value="Coninue with Apple"></div>                   
+                    <div class="continue_text"><input type="button" value="Coninue with Apple"></div>                   
                 </div>
             </div>
-            <div>
+            <div class="continue">
                 <div>
-                    <div><img></div>
-                    <div> <input type="button" value="Coninue with Facebook"></div>                   
+                    <div><img src="" alt=""></div>
+                    <div class="continue_text"> <input type="button" value="Coninue with Facebook"></div>                   
                 </div>
             </div>
         </div>
         <div>
-            <p>By signin or creating an account, ypu agree with our terms and condictions and privacy statemant</p>
+            <p class="clear">By signin or creating an account, you agree with our terms and condictions and privacy statemant</p>
         </div>
     </div>
-    <div></div>
+    <div id="right"></div>
     
 
 </body>
