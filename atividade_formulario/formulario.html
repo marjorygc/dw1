@@ -12,11 +12,11 @@
         body{
             display: flex;
             font-family:"Open Sans", sans-serif;
+            gap: 50px;
         }
 
         #left{
             justify-content: flex-start;
-            padding: 30px;
             width: 45%;
         }
 
@@ -26,9 +26,12 @@
             border: 1px solid white;
             border-radius: 15px;
             background-image: url("https://i.pinimg.com/736x/f0/1f/0c/f01f0c20cdd203bc2454d1ff2b7ec171.jpg");
+            background-repeat: no-repeat;
+            height: ;
         }
 
         input{
+            width: 70%;
             display: flex;
             flex-direction: column;
             border: 1px solid gray;
@@ -37,20 +40,30 @@
             padding: 0.5rem;
         }
 
-        .clear{
-            font-weight: lighter;
-           
-        }
-
         #box1{
             justify-content: flex-start;
             align-items: flex-start;
             padding-left: 60px;
         }
+        
+        .continue1{
+            color: white;
+            background-color: black;
+
+        }
 
         .or{
+            display: flex;
             justify-content: center;
+            align-items: center;
             padding-left: 60px;
+            font-weight: lighter;
+            gap: 2rem;
+        }
+
+        hr{
+            width: 100%;
+            height: 0;
         }
 
         #box2{
@@ -58,15 +71,16 @@
             padding-left: 60px;
         }
 
-        .continue1{
-            color: white;
-            background-color: black;
-
+        .continue{
+            display: flex;
+            justify-content: center;
+            border: 1px solid gray;
+            border-radius: 2px;
+            outline: none;
+            padding: 0.7rem;
         }
 
-        .continue_text{
-
-        }
+       
 
         img{
             width: 1.5rem;
@@ -75,10 +89,13 @@
         input[type=button]{
             background-color: white;
             color: black;
-            border: 1px solid gray;
-            border-radius: 2px;
-            outline: none;
-            padding: 0.7rem;
+            
+            
+        }
+
+        #rodape{
+            font-weight: lighter;
+            padding-left: 60px;
         }
 
 
@@ -90,7 +107,7 @@
     <div id="left">
         <div id="box1">
             <h1>Sign in or creat an account</h1>
-            <p class="clear">Welcome back Please enter your details</p>
+            <p id="">Welcome back Please enter your details</p>
             <form action="#" method="get">
                 <input type="text" placeholder="Name">
                 <input type="text" placeholder="Email addres">
@@ -100,26 +117,26 @@
         <div class="or">
             <hr>
             <p>or</p>
-            </hr>
+            <hr>
         </div>
         <div id="box2">
             <div class="continue">
                 <div><img src="https://img.icons8.com/?size=512&id=17949&format=png" alt=""></div>
-                <div class="continue_text"><input type="button" value="Coninue with Google"></div>                   
+                <div><input type="button" value="Coninue with Google"></div>                   
             </div>
             <div class="continue">
                     <div> <img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.jpg" alt=""></div>
-                    <div class="continue_text"><input type="button" value="Coninue with Apple"></div>                   
+                    <div><input type="button" value="Coninue with Apple"></div>                   
                
             </div>
             <div class="continue">
                     <div><img src="https://cdn.icon-icons.com/icons2/1826/PNG/512/4202107facebookfblogosocialsocialmedia-115710_115591.png" alt=""></div>
-                    <div class="continue_text"> <input type="button" value="Coninue with Facebook">              
+                    <div><input type="button" value="Coninue with Facebook">              
                 </div>
             </div>
         </div>
         <div>
-            <p class="clear">By signin or creating an account, you agree with our terms and condictions and privacy statemant</p>
+            <p id="rodape">By signin or creating an account, you agree with our terms and condictions and privacy statemant</p>
         </div>
     </div>
     <div id="right"></div>
