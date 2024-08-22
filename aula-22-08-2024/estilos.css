@@ -1,0 +1,11 @@
+h1 {
+    color: rgb(31, 85, 31);
+}
+
+#saida{
+    border: 1px solid black;
+    background-color: rgb(240, 240, 86);
+    width: 20rem;
+    height: 5rem;
+    margin-top: 1rem;
+}
