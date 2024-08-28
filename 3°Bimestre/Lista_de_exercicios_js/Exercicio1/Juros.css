@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+#capital{
+    padding: 0.5rem;
+    width: 300px;
+}
+
+#taixa{
+    padding: 0.5rem;
+    width: 300px;
+}
+
+#periodo{
+    padding: 0.5rem;
+    width: 300px;
+}
+
+#calcular{
+    padding: 0.5rem;
+    width: 300px;
+    margin: 10px;
+}
+
+#saida{
+    padding: 0.7rem;
+    width: 300px;
+    border: 1px solid rgb(29, 29, 29);
+    background-color: gray;
+}
