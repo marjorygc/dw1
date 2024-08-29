@@ -12,10 +12,10 @@ function calculaJuros(){
     // Entrada       
     let capital = Number(inputCapital.value)
     let taixa = Number(inputTaixa.value)
-    let periodo = Number(inputPeriodo)
+    let periodo = Number(inputPeriodo.value)
 
     // Processamento
-    let m = capital * (1+taixa)^periodo
+    let m = capital * (1+taixa)**periodo
 
     // Saída
     divSaida.innerText = m
