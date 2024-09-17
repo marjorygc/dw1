@@ -14,7 +14,7 @@ function multa(){
 
     let multa50 = velocidade_veiculo > (velocidade_maxima + (velocidade_maxima*0.5))
     let multa20_50 = (velocidade_veiculo > (velocidade_maxima + (velocidade_maxima*0.2))) && (velocidade_veiculo <= (velocidade_maxima + (velocidade_maxima*0.5))) 
-    let multa20 = velocidade_veiculo <= (velocidade_maxima + (velocidade_maxima*0.2))
+    let multa20 = velocidade_veiculo >= (velocidade_maxima + (velocidade_maxima*0.2))
 
     if(multa50 == true){
         divSaida.innerText = "O valor da sua multa é de R$ 880,41"
