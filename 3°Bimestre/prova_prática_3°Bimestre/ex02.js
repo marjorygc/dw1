@@ -13,8 +13,8 @@ function menor_numero(n1,n2,n3){
 }
 
 
-let numero1 = -3
-let numero2 = 2
-let numero3 = 8
+let numero1 = 2
+let numero2 = 8
+let numero3 = -3
 
 menor_numero(numero1,numero2,numero3)
