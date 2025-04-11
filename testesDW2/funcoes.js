@@ -62,3 +62,34 @@ function aumento(salario_atual){
 }
 
 aumento(3000)
+
+//Crie uma função que receba 2 valores (x e y), que devem representar as coordenadas de um ponto em um plano. A seguir, determine o quadrante ao qual pertence o ponto, ou se está sobre um dos eixos cartesianos (x = 0 ou y = 0) ou na origem (x = y = 0).
+//Se o ponto estiver na origem, escreva a mensagem “Origem”. Se o ponto estiver sobre um dos eixos escreva “Eixo X” ou “Eixo Y”, conforme for a situação. Considere os exemplos abaixo.
+
+function quadrante(x,y){
+    let mensagem = ""
+    if(x == y && y == 0){
+        mensagem = "Origem"
+    } 
+    else if (x == 0){
+        mensagem = "Eixo X"
+    }
+    else if (y == 0){
+        mensagem = "Eixo y"
+    }
+    else if (x > 0 && y > 0){
+        mensagem = "Primeiro quadrante"
+    }
+    else if (x < 0 && y > 0){
+        mensagem = "Segundo quadrante"
+    }
+    else if (x < 0 && y < 0){
+        mensagem = "Terceiro quadrante"
+    }
+    else if (x > 0 && y < 0){
+        mensagem = "Quarto quadrante"
+    }
+    console.log(mensagem)
+}
+
+quadrante(0,0)
